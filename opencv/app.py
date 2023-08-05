@@ -9,6 +9,7 @@ camera = cv2.VideoCapture(0)
 def gen_frames():  
     while True:
         success, frame = camera.read()  # read the camera frame
+        
         if not success:
             break
         else:
